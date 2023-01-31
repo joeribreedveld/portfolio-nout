@@ -1,3 +1,5 @@
+import Navbar from "./Navbar";
+
 interface ILayoutProps {
   children: React.ReactNode;
 }
@@ -5,7 +7,9 @@ interface ILayoutProps {
 const Layout = ({ children }: ILayoutProps) => {
   return (
     <div>
-      <header>Header</header>
+      <header>
+        <Navbar />
+      </header>
       <div>{children}</div>
       <footer>Footer</footer>
     </div>
