@@ -7,3 +7,31 @@
         @apply px-8
     }
 }
+
+@layer base {
+    h1 {
+        @apply text-5xl font-bold
+    }
+
+    h3 {
+        @apply text-2xl font-bold
+    }
+
+    h4 {
+        @apply text-xl
+    }
+}
+
+@layer components {
+    .btn {
+        @apply py-3 px-6 rounded
+    }
+
+    .btn-primary {
+        @apply bg-white
+    }
+
+    .btn-secondary {
+        @apply border border-black
+    }
+}
