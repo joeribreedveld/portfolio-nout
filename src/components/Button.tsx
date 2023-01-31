@@ -8,8 +8,8 @@ interface IButtonProps {
 const Button = ({ className, onClick, children, variant }: IButtonProps) => {
   return (
     <button
-      className={`${className} btn ${
-        variant && variant === "primary" ? "btn-primary" : "btn-secondary"
+      className={`${className ? className : ""} btn ${
+        variant === "primary" ? "btn-primary" : "btn-secondary"
       }`}
       onClick={onClick}
     >
