@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section className="page-width flex flex-col gap-8 py-16">
       <h2>Services</h2>
-      <ul className="flex flex-col justify-between md:flex-row">
+      <ul className="flex flex-col justify-between gap-8 md:flex-row">
         <li>
           <Card
             title="Photography"
